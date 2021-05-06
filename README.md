@@ -1,6 +1,7 @@
 # homework18-blockchain
 
 Create a directory containing all the blockchain tools file (geth - puppeth)
+
 Open the terminal and CD into that directory you just created
 Create accounts for two nodes for the network with a separate datadir for each using geth.
 ./geth --datadir node1 account new
