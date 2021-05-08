@@ -2,7 +2,7 @@
 
 ![download](https://user-images.githubusercontent.com/74984280/117550377-0089e580-b00e-11eb-9f5c-caff6d0f78ba.jpg)
 
-
+## Set up
 Create a directory containing all the blockchain tools file (geth - puppeth)
 
 Open the terminal and CD into that directory you just created
@@ -12,6 +12,8 @@ Create accounts for two nodes for the network with a separate datadir for each u
 ./geth --datadir node1 account new
 
 ./geth --datadir node2 account new
+
+## Puppeth
 
 Run puppeth, name your network, and select the option to configure a new genesis block.
 
@@ -27,11 +29,15 @@ Export genesis configurations. This will fail to create two of the files, but yo
 
 With the genesis block creation completed, we will now initialize the nodes with the genesis' json file.
 
+## Initialize Nodes
+
 Using geth, initialize each node with the new networkname.json.
 
 ./geth --datadir node1 init networkname.json
 
 ./geth --datadir node2 init networkname.json
+
+## Run the Nodes
 
 Run the nodes in separate terminal windows with the commands:
 
@@ -41,7 +47,7 @@ Run the nodes in separate terminal windows with the commands:
 Type password and hit enter
 
 
-Open MyCrypto:
+## Open MyCrypto:
 
 Click "Add Custom Node", then add the custom network information that you set in the genesis.
 
