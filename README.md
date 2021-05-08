@@ -13,6 +13,9 @@ Create accounts for two nodes for the network with a separate datadir for each u
 
 ./geth --datadir node2 account new
 
+![Screenshot](https://user-images.githubusercontent.com/74984280/117550440-6b3b2100-b00e-11eb-983c-3240ca0a50bb.png)
+
+
 ## Puppeth
 
 Run puppeth, name your network, and select the option to configure a new genesis block.
@@ -28,6 +31,9 @@ Choose no for prefunding with WEI
 Export genesis configurations. This will fail to create two of the files, but you only need networkname.json.
 
 With the genesis block creation completed, we will now initialize the nodes with the genesis' json file.
+
+![Screenshot1](https://user-images.githubusercontent.com/74984280/117550441-71c99880-b00e-11eb-9393-3afe29598945.png)
+
 
 ## Initialize Nodes
 
@@ -45,6 +51,8 @@ Run the nodes in separate terminal windows with the commands:
 
 ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 Type password and hit enter
+
+![Screenshot 3 - Initiate nodes](https://user-images.githubusercontent.com/74984280/117550449-7c842d80-b00e-11eb-82c1-af1a8e1f5be0.png)
 
 
 ## Open MyCrypto:
@@ -65,6 +73,13 @@ On the next screen, click Select Wallet File, then navigate to the keystore dire
 
 This will open your account wallet inside MyCrypto.
 
+![Screenshot 4](https://user-images.githubusercontent.com/74984280/117550467-90c82a80-b00e-11eb-9069-d1efbbde80be.png)
+![Screenshot 5](https://user-images.githubusercontent.com/74984280/117550469-91f95780-b00e-11eb-80a7-85416c892e88.png)
+
+
 In the To Address box, type the account address from Node2, then fill in an arbitrary amount of ETH:
 
 Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
+
+![Screenshot 6](https://user-images.githubusercontent.com/74984280/117550462-89088600-b00e-11eb-9386-6f6e148e4988.png)
+
