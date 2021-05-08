@@ -1,5 +1,8 @@
 # homework18-blockchain
 
+![download](https://user-images.githubusercontent.com/74984280/117550377-0089e580-b00e-11eb-9f5c-caff6d0f78ba.jpg)
+
+
 Create a directory containing all the blockchain tools file (geth - puppeth)
 
 Open the terminal and CD into that directory you just created
